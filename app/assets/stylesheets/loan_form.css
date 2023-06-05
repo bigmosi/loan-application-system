@@ -67,3 +67,35 @@ input[type="submit"]:hover {
 .loan-table tbody tr:hover {
     background-color: #f1f1f1;
 }
+
+.loan-list-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.loan-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f5f5f5;
+}
+
+.loan-detail-value {
+    color: #666;
+    margin-left: 20px;
+}
+
+.loan-detail {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}

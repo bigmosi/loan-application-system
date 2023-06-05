@@ -1,7 +1,7 @@
 <%= stylesheet_link_tag 'loan_form' %>
 
 
-<h1>Loan Admin Dashboard - Loans List</h1>
+<h1 class="loan-list-title">Loan Admin Dashboard - Loans List</h1>
 
 <table class="loan-table">
   <thead class="thead">
@@ -21,6 +21,9 @@
         <td><%= loan.amount %></td>
         <td><%= loan.interest_rate %></td>
         <td><%= loan.duration %></td>
+        <td>
+          <a href="<%= loan_path(loan) %>">View Details</a>
+        </td>
       </tr>
     <% end %>
   </tbody>

@@ -1,9 +1,37 @@
-<h1>Loan Admin Dashboard - Loan Details</h1>
+<%= stylesheet_link_tag 'loan_form' %>
+<%= link_to 'Back to Loan List', loans_path, class: 'back-button' %>
 
-<div>
-  <p><strong>Name:</strong> <%= @loan.name %></p>
-  <p><strong>Email:</strong> <%= @loan.email %></p>
-  <p><strong>Amount:</strong> <%= @loan.amount %></p>
-  <p><strong>Interest Rate:</strong> <%= @loan.interest_rate %></p>
-  <p><strong>Duration:</strong> <%= @loan.duration %></p>
+<h1 class="loan-list-title">Loan Admin Dashboard - Loan Details</h1>
+
+<div class="loan-details">
+  <div class="loan-detail">
+     <strong>Name:</strong>
+       <div class="loan-detail-value">
+         <%= @loan.name %>
+       </div>
+  </div>
+  <div class="loan-detail">
+    <strong>Email:</strong>
+    <div class="loan-detail-value">
+       <%= @loan.email %>
+    </div>
+  </div>
+  <div class="loan-detail">
+    <strong>Amount:</strong>
+    <div class="loan-detail-value">
+       <%= @loan.amount %>
+    </div>
+  </div>
+  <div class="loan-detail">
+    <strong>Interest Rate:</strong>
+    <div class="loan-detail-value">
+       <%= @loan.interest_rate %>
+    </div>
+  </div>
+  <div class="loan-detail">
+    <strong>Duration:</strong>
+    <div class="loan-detail-value">
+       <%= @loan.duration %>
+    </div>
+  </div>
 </div>
