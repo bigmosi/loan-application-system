@@ -1,0 +1,28 @@
+
+<%= stylesheet_link_tag 'loan_form' %>
+<h1>Loan Applications</h1>
+
+<% if user_signed_in? %>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<% end %>
+
+
+
+<%= form_with(model: @loan, url: loans_path) do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :email %>
+  <%= form.email_field :email %>
+
+  <%= form.label :amount %>
+  <%= form.number_field :amount %>
+
+  <%= form.label :interest_rate %>
+   <%= form.text_field :interest_rate %>
+
+  <%= form.label :duration %>
+  <%= form.number_field :duration %>
+
+  <%= form.submit "Submit" %>
+<% end %>

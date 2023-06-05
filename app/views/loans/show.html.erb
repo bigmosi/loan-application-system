@@ -1,0 +1,25 @@
+<div class="loan-details">
+  <h1>Loan Application Details</h1>
+
+  <div class="field">
+    <strong>Name:</strong>
+    <%= @loan.name %>
+  </div>
+  <div>
+    <strong>Email:</strong>
+    <%= @loan.email %>
+  </div>
+  <div>
+    <strong>Amount:</strong>
+    <%= @loan.amount %>
+  </div>
+  <div class="field">
+    <strong>Duration:</strong>
+    <%= @loan.duration %> months
+  </div>
+
+  <div class="field">
+    <strong>Status:</strong>
+      <%= @loan.status %>
+  </div>
+</div>

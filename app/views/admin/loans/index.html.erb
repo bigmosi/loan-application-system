@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag 'loan_form' %>
+
+
+<h1>Loan Admin Dashboard - Loans List</h1>
+
+<table class="loan-table">
+  <thead class="thead">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Amount</th>
+      <th>Interest Rate</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @loans.each do |loan| %>
+      <tr>
+        <td><%= loan.name %></td>
+        <td><%= loan.email %></td>
+        <td><%= loan.amount %></td>
+        <td><%= loan.interest_rate %></td>
+        <td><%= loan.duration %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,26 @@
+/* loans.css */
+
+.loan-details {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.loan-details h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.loan-details .field {
+    margin-bottom: 10px;
+}
+
+.loan-details strong {
+    font-weight: bold;
+}
+
+.loan-details .field strong {
+    display: inline-block;
+    width: 100px;
+}
